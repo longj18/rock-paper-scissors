@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+display: flex;
+flex-direction: column;
+
+}
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: ;
+}
+
+h1{
+margin: 10px 0 40px 10px;
+}
+
+.description{
+border: 2px solid blue;
+padding: 10px;
+margin: 10px 10px 40px 0;
+text-align: center;
+align-self: flex-start;
+}
+.game{
+display: flex;
+border: 8px solid black;
+height: 80vh;
+flex-direction: row;
+justify-content:center ;
+align-items: ;
+flex-wrap: wrap;
+padding: 20px;
+margin: 20px;
+}
+
+.box{
+font-size: 50px;
+color: white;
+padding: 10px;
+text-align: center;
+font-weight: 300;
+box-sizing: border-box;
+width: 40%;
+margin: 20px;
+
+}
+
+.title{
+background-color: aquamarine;
+width: 40%;
+margin: 0 40%;
+align-self: flex-start;
+}
+
+.computer{
+background-color: blanchedalmond;
+width: 40%;
+align-self: center;
+}
+
+.user{
+background-color: chartreuse;
+align-self: center;
+}
+
+.playAgain{
+background-color: darkmagenta;
+width: 40%;
+margin: 0 40%;
+align-self: flex-end;
+}
