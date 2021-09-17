@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    height: 100vh;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 1.5fr;
+    grid-template-rows: 1fr 4fr 3fr 2fr;
+    grid-template-areas: 
+    "title title header"
+    "main main scoreBox"
+    "nom yum scoreBox"
+    "footer footer scoreBox";
+
+    height: 100vh;
+    margin: 2em;
+}
+
+section.title{
+grid-area: title;
+background: turquoise;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+main{
+    grid-area: main;
+    background: #fffADF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.selection{
+height: 100px;
+width: 100px;
+}
+
+img{
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 5px ;
+}
+.selection{
+    cursor: pointer;
+    transition: 100ms;
+    background-color: none;
+}
+.selection:hover{
+    transform: scale(1.2);
+}
+
+
+section.userScore{
+    grid-area: nom;
+    background: #46b2f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.computerScore{
+    grid-area: yum;
+    background: #6ce69e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resultScore{
+    margin-left: .5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.scoreContainer{
+    grid-area: scoreBox;
+    display: grid;
+    background: tomato;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: repeat(20px); */
+    /* grid-template-areas: 
+    "yscore cscore" */
+    
+justify-items: center;
+
+}
+.yScore{
+margin-top: 15px;
+}
+
+.cScore{
+margin-top: 15px;
+}
+
+
+footer{
+    grid-area: footer;
+    background: #f1b9b9;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-selection{
+    opacity: .5;
+}
+
+.result-selection.winner{
+    opacity: 1;
+    font-size: 1.75rem;
+
+}
+#game-over{
+    align-self: flex-end;
+}
