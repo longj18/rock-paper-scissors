@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <section class="title">Pick Your Sign!</section>
+        <main>
+            <div class="selection rock" data-selection="rock"><img
+                    src="https://www.pngitem.com/pimgs/m/113-1134394_pile-of-rocks-png-rock-clipart-png-transparent.png"
+                    alt=""></div>
+            <div class="selection paper" data-selection="paper"><img
+                    src="https://p.kindpng.com/picc/s/785-7856331_scroll-icon-note-paper-open-cartoon-free-letter.png"
+                    alt=""></div>
+            <div class="selection scissors" data-selection="scissors"><img
+                    src="https://www.kindpng.com/picc/m/44-442473_pair-of-red-scissors-svg-clip-arts-scissors.png"
+                    alt=""></div>
+        </main>
+
+        <section class="userScore">User Score: <span class="resultScore" data-your-score>0</span></section>
+        <section class="computerScore">Computer Score: <span class="resultScore" data-computer-score>0</span></section>
+
+        <footer>
+            <button class="start" data-selection-start>Start</button>
+            <div id="game-over" style="display: none">Game Over</div>
+            <button class="reset" data-selection-reset>Reset</button>
+        </footer>
+
+        <header>Rock Paper Scissors</header>
+
+
+        <div class="scoreContainer">
+            <div class="yScore">Your Score</div>
+            <div class="cScore" data-final-column>Computer Score</div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
